@@ -54,7 +54,6 @@ class Owner
 #can buy a dog that is an instance of the Dog class, knows about its dogs
   def buy_dog(name)
     dog = Dog.new(name, self)
-    binding.pry
     @dogs << dog
   end
 
