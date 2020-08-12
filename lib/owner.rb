@@ -81,6 +81,8 @@ class Owner
     dog.mood = "nervous"
     @dogs.delete(dog)
     end 
+    
+  
   end 
   
   
