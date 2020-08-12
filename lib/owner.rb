@@ -84,7 +84,7 @@ class Owner
    @cats.each do |cat|
     cat.owner = nil
     cat.mood = "nervous"
-    @dogs.delete(cat)
+    @cats.delete(cat)
     end
   end 
   
