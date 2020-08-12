@@ -44,7 +44,7 @@ class Owner
   
 #can buy a cat that is an instance of the Cat class, knows about its cats
   def buy_cat 
-  
+    
   end 
   
   
