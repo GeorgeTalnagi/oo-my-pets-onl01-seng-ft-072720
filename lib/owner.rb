@@ -69,9 +69,10 @@ class Owner
   
 #feeds cats which makes the cats' moods happy 
   def feed_cats 
- 
+    @cats.each do |cat|
+      cat.mood = "happy"
+   end 
   end 
-  
   
 #can sell all its pets, which makes them nervous can sell all its pets, which leaves them without an owner
   def sell_pets 
