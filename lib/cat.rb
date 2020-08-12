@@ -12,7 +12,7 @@ attr_reader :name
   end 
 
   def self.all
-    @@all << self 
+    @@all  
   end 
 
  def save 
