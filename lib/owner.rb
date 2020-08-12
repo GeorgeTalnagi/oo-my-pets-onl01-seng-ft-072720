@@ -79,7 +79,7 @@ class Owner
     @dogs.each do |dog|
     dog.owner = nil
     dog.mood = "nervous"
-    
+    @dogs.delete(dog)
     end 
   end 
   
