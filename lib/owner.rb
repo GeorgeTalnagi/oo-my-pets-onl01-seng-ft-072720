@@ -53,7 +53,8 @@ class Owner
   
 #can buy a dog that is an instance of the Dog class, knows about its dogs
   def buy_dog(name)
-    @dogs << Dog.new(name, self)
+    dog = Dog.new(name, self)
+    @dogs << dog
   end
 
 
