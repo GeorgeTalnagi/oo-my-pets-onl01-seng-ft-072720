@@ -76,7 +76,7 @@ class Owner
   
 #can sell all its pets, which makes them nervous can sell all its pets, which leaves them without an owner
   def sell_pets 
-    dogs.con
+    @dogs.concat(@cats)
   end 
   
   
