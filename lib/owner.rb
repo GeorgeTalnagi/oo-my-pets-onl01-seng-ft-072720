@@ -45,6 +45,7 @@ class Owner
 #can buy a cat that is an instance of the Cat class, knows about its cats
   def buy_cat(name)
     #passing this owner object into the cat object
+    cat = Cat.new
     @cats << Cat.new(name, self) 
     
   end 
@@ -58,7 +59,6 @@ class Owner
 
 #walks the dogs which makes the dogs' moods happy
   def walk_dogs 
-    binding.pry
     @dogs.each do |dog|
       dog.mood = "happy"
     
