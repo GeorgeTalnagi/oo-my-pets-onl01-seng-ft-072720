@@ -5,7 +5,7 @@ class Owner
   attr_reader :name, :species 
  
  @@all = []
-
+ @@pets 
   
   def initialize(name)
     @name = name
@@ -44,7 +44,7 @@ class Owner
   
 #can buy a cat that is an instance of the Cat class, knows about its cats
   def buy_cat(name)
-    #passing this owner object into the cat object
+    #passing a name and this owner object into the cat object
     cat = Cat.new(name, self) 
     @cats << cat
     
