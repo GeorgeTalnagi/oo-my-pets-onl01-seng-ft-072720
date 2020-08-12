@@ -75,15 +75,15 @@ class Owner
   
 #can sell all its pets, which makes them nervous can sell all its pets, which leaves them without an owner
   def sell_pets 
-    @dogs.each do |dog|
+    self.dogs.each do |dog|
     dog.owner = nil
     dog.mood = "nervous"
-    @dogs.delete(dog)
+    self.dogs.delete(dog)
     end 
-   @cats.each do |cat|
+   self.cats.each do |cat|
     cat.owner = nil
     cat.mood = "nervous"
-    @cats.delete(cat)
+    self.cats.delete(cat)
     end
   end 
   
