@@ -58,7 +58,7 @@ class Owner
 
 #walks the dogs which makes the dogs' moods happy
   def walk_dogs 
-    
+    owner.dogs 
  
   end 
   
