@@ -76,9 +76,9 @@ class Owner
   
 #can sell all its pets, which makes them nervous can sell all its pets, which leaves them without an owner
   def sell_pets 
-    @dogs.concat(@cats).each do |pet|
-    pet.owner = nil
-    pet.mood = ""
+    @dogs.each do |dog|
+    dog.owner = nil
+    dog.mood = "nervous"
     end 
   end 
   
