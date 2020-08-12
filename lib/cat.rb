@@ -1,9 +1,11 @@
 class Cat
-attr_accessor
-attr_reader
+attr_accessor :owner 
+attr_reader :name 
   
-  def initalize()
-  
+  def initalize(name, owner)
+  @name = name 
+  @owner = owner 
+  @mood = "nervous"
   end 
 
 
