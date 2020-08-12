@@ -40,6 +40,7 @@ class Owner
     @@all.clear 
   end
   
+
   
   
 #can buy a cat that is an instance of the Cat class, knows about its cats
