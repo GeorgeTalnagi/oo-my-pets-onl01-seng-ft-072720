@@ -43,14 +43,15 @@ class Owner
   
   
 #can buy a cat that is an instance of the Cat class, knows about its cats
-  def buy_cat 
-    
+  def buy_cat(name)
+    #passing this owner object into the cat object
+    Cat.new(name, self) 
   end 
   
   
 #can buy a dog that is an instance of the Dog class, knows about its dogs
-  def buy_dog 
- 
+  def buy_dog(name)
+    Dog.new(name, self)
   end
 
 
