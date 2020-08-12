@@ -66,7 +66,7 @@ class Owner
 
 #walks the dogs which makes the dogs' moods happy
   def walk_dogs 
-    @dogs.each do |dog|
+    self.dogs.each do |dog|
       dog.mood = "happy"
     end 
   end 
@@ -74,7 +74,7 @@ class Owner
   
 #feeds cats which makes the cats' moods happy 
   def feed_cats 
-    @cats.each do |cat|
+    self.cats.each do |cat|
       cat.mood = "happy"
    end 
   end 
