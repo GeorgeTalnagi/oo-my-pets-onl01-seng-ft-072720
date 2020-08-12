@@ -9,6 +9,7 @@ attr_reader :name
     @name = name 
     @owner = owner 
     @mood = "nervous"
+    save
   end 
 
   def self.all
