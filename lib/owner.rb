@@ -40,8 +40,13 @@ class Owner
     @@all.clear 
   end
   
-
+  def cats 
+    Cat.all.select{|cat| cat.owner == self}
+  end 
   
+  def dogs 
+    Dog.all.select{|dog| dog.owner == self}
+  end 
   
 #can buy a cat that is an instance of the Cat class, knows about its cats
   def buy_cat(name)
