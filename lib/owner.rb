@@ -10,7 +10,6 @@ class Owner
     @name = name
     @species = species
     @species = "human"
-    save
   end 
 
 
