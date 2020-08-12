@@ -41,17 +41,6 @@ class Owner
   end
   
   
-#returns a collection of all the cats that belong to the owner
-  def cats
-    @cats
-  end 
-  
-  
-#returns a collection of all the dogs that belong to the owner
-  def dogs 
-    @dogs
-  end 
-  
   
 #can buy a cat that is an instance of the Cat class, knows about its cats
   def buy_cat 
